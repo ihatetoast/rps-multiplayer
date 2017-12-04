@@ -2,37 +2,69 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>RPS MPG</title>
-
+    <title>RPS MPG</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    
+		
 	</head>
 	<body>
 
 		<header>
-			<h1></h1>
+			<h1>Ro! Sham! Bo!</h1>
 		</header>
+    <div id="main" class="main">
+      <section id="game" class="game">
+        <div id="playerOne" class="players boxes">
+          <div class="plays rock" data-play="rock">
+            <img src="./assets/images/rock.svg" alt="a rock">
+          </div>
+          <div class="plays paper" data-play="paper">
+              <img src="./assets/images/paper.svg" alt="a sheet of paper">
+          </div>
+          <div class="plays scissors" data-play="scissors">
+              <img src="./assets/images/scissors.svg" alt="a pair of scissors">
+          </div>
+        </div>
 
-		<section>
-		</section>
+        <div id="results" class="boxes">
+          <p>placemarker of results</p>
+        </div>
+
+        <div id="playerTwo" class="players boxes">
+          <div class="plays rock" data-play="rock">
+            <img src="./assets/images/rock.svg" alt="a rock">
+          </div>
+          <div class="plays paper" data-play="paper">
+              <img src="./assets/images/paper.svg" alt="a sheet of paper">
+          </div>
+          <div class="plays scissors" data-play="scissors">
+              <img src="./assets/images/scissors.svg" alt="a pair of scissors">
+          </div>
+        </div>
+      </section>
+      
+      <section id="chat">
+        <div id="chatBox">
+asdf
+        </div>
+      </section>
+    </div>
 
 		<footer>
+			<p>Katy Cassidy | ihatetoast</p>
 		</footer>
 
 
 
 
-	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
 	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyCEMB02cu_5VlIO0TQvxGPcOSjI3YCdScQ",
-	    authDomain: "ihatetoast-rps-game.firebaseapp.com",
-	    databaseURL: "https://ihatetoast-rps-game.firebaseio.com",
-	    projectId: "ihatetoast-rps-game",
-	    storageBucket: "ihatetoast-rps-game.appspot.com",
-	    messagingSenderId: "712858402970"
-	  };
-  	firebase.initializeApp(config);
+	  
 	</script>
+
+
 	<script src="./assets/scripts/main.js"></script>
 		
 	</body>
